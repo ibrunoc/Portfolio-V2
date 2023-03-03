@@ -1,0 +1,111 @@
+@import url(../../../App.scss);
+
+.service-zone{ 
+  background-color: var(--bg-color); 
+  max-width: 1200px;
+  margin: auto;   
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.service {
+  height: 330px;
+  background-color: var(--bg-color);
+  border-bottom: 3px solid var(--subtitle-color);
+  border-radius: 5px;
+  padding-top: 50px;
+  margin: auto 20px;
+  flex-wrap: wrap;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+
+.service:hover {
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); 
+}
+
+.service-info{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  flex-direction: row;
+}
+
+.service-icon p{
+  width: 90%;
+  margin: auto;
+  color: var(--body-color);
+}
+
+.service-container{
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  flex-wrap: wrap;  
+  max-width: 25%;
+}
+
+.iconService {
+  font-size: 60px;
+  color: var(--subtitle-color);
+  margin-top: 10px; 
+}
+
+.iconService:hover { color: var(--subtitleInvert-color); }
+
+.service .service-title{
+  width: 95%;
+  margin: 15px auto;
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: 600;
+  color: var(--subtitle-color);
+  user-select: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+
+.service .service-title:hover { color: var(--subtitleInvert-color); }
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media screen and (max-width: 763px) { 
+  .service{     
+    margin-top: 20px;
+    padding: 25px 0px; 
+    height: 250px;
+  }
+
+  .service-container {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: auto;
+  }  
+}
+
+@media screen and (max-width: 563px) {  
+  .service{ 
+    width: 80%; 
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .service-container {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }   
+}

@@ -1,0 +1,32 @@
+@import url(../../../App.scss);
+
+.scroll-top {
+    height: 43px;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;    
+    border: 1px solid var(--bg-color);
+    background-color: var(--subtitle-color);
+    z-index: 999;
+}
+  
+.scroll-top:hover {
+  border: 1px solid var(--body-color);
+  background-color: var(--subtitle2-color);
+}
+
+.arrow{
+  font-size: 40px;
+  color: var(--bg-color);  
+}
+
+.arrow:hover{ color: var(--body-color); }
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 900px) {
+  .scroll-top { display: none; }
+}

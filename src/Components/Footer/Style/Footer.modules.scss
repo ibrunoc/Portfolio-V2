@@ -1,0 +1,203 @@
+@import url(../../../App.scss);
+
+#contact{ height: 500px; }
+
+.contact-zone{   
+  padding-top: 90px;
+  padding-bottom: 150px;
+  background-color: var(--bg-color);   
+}
+
+.contact-zone .container{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-title{ padding-bottom: 70px; }
+
+.section-title .title {
+  font-weight: 700;  
+  font-size: 50px;
+  color: var(--body-color);
+  padding-top: 20px;
+}
+
+.boxesInfo{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxContainer{
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.contact-box {
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  padding: 10px 35px;
+  height: 180px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+
+.contact-box .contact-info {
+  margin: 25px auto;  
+  color: var(--body-color);
+}
+
+.contact-box .contact-info i{
+  font-size: 48px;
+  color: var(--subtitle-color);
+}
+
+.Email, .Phone, .Location{
+  font-size: 48px;
+  color: var(--subtitle-color);
+}
+
+.Email:hover, .Phone:hover, .Location:hover{color: var(--subtitleInvert-color);}
+
+.contact-box .contact-info .contact-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px; 
+}
+
+.contact-box:hover {
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); 
+}
+
+.footer-zone {  padding-top: 50px; }
+
+.footer-zone p {  
+  color: var(--body-color);
+  margin-top: 35px; 
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;   
+  z-index: 3;
+  position: relative; 
+  font-family: 'Kanit';
+}
+
+.footer-widget {
+  border-top: 3px solid var(--subtitle-color);
+  background-color: var(--bg-color);
+}
+
+.footer-content ul {margin-top: 35px;}
+
+.footer-content ul li {
+  display: inline-block;
+  margin: 0 14px; 
+}
+
+.footer-content ul li a {
+  font-size: 43px;
+  width: 95px;
+  height: 92px;
+  line-height: 87px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--subtitle-color);
+  border: 1px solid var(--subtitle-color);
+  background-color: var(--bg-color);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+        
+.footer-content ul li a:hover {
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  border: 1px solid var(--body-color);
+}
+
+.github-footer, .linkedin-footer{
+  width: 48px;
+  height: 30px;
+  display: inline-block; 
+  z-index: 3;
+  position: relative; 
+}
+
+.footer-copyright {
+  background-color: var(--bg-color);
+}
+
+.footer-copyright .copyright-text p {
+  color: var(--body-color);  
+  padding-bottom: 40px;   
+  z-index: 3;
+  position: relative; 
+}
+
+.footer-copyright .copyright-text p:hover {color: var(--subtitle-color);}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {
+
+  .section-title{  padding-bottom: 30px;  }
+
+  .contact-zone { padding-top: 70px; } 
+ 
+  .boxesInfo{ margin: 0; }
+
+  .boxContainer{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-box {
+    height: 215px;
+    padding: 30px 25px; 
+  } 
+
+  .footer-widget {
+    padding-top: 80px;
+    padding-bottom: 80px; 
+  } 
+
+  .footer-content ul li {margin: 0 7px;} 
+
+  .footer-content ul li a {
+    width: 52px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px; 
+  }
+
+  .footer-zone p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-zone {
+    padding-top: 90px;
+    padding-bottom: 100px; 
+  }
+    
+  .footer-widget {
+     padding-top: 100px;
+     padding-bottom: 100px; 
+   } 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contact-box {padding: 10px 25px;} 
+}

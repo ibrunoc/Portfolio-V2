@@ -1,0 +1,87 @@
+@import url(../../../App.scss);
+
+.error-404 {
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.error-404 .container-erro {
+  width: 100%;  
+  transition: all 0.4s ease;
+  display: block;  
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-404 {
+  width: 100%;
+  min-width: 400px;
+  font-size: 200px;
+  font-weight: 700;
+  color: var(--subtitle-color);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  z-index: 2;
+}
+
+.text-erro {
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+}
+
+.text-erro p{
+  color: var(--body-color);
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 0.6px;
+  font-family: "Lato";
+}
+
+.text-erro button {
+  width: 100px;
+  margin: 40px auto auto auto;
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 3;
+  color: var(--bg-color);
+  background-color: var(--subtitle-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.text-erro button:hover {
+  background: var(--subtitleInvert-color);
+  color: white;
+}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {
+  .text-erro article p {  width: 70%; }
+
+  .text-404 { font-size: 180px;  }
+}
+
+@media (max-width: 350px) {  
+  .text-404 { font-size: 120px; }
+
+  .text-erro p { width: 50%; }
+}

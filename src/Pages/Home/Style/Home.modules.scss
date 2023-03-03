@@ -1,0 +1,325 @@
+@import url(../../../App.scss);
+
+.cover-content {
+  height: 1010px;
+  width: 100%;
+  position: relative;    
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.cover-content img{object-fit: cover;}
+
+.cover-content .right-container {
+  max-width: 1700px; 
+  display: block;
+  margin: auto;
+}
+
+.color-background{
+  width: 100%;
+  height: 1010px;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(0deg, var(--bg-color) 0%, rgba(252,69,69,0.1) 70%)!important;
+}
+
+.background-cover{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;   
+}
+
+.background-cover img{
+  width: 100%;
+  height: 1010px;
+  background-size: contain;
+  top: 0 !important;
+  left: 0 !important; 
+}
+
+.info-cover{ 
+  position: relative;
+  z-index: 4;
+  padding-top: 330px; 
+  width: 50%;
+  padding-left: 17%;
+  float: left;
+}
+
+.cover-container-right {position: relative; }
+
+.cover-container-right .sub-title-cover {
+  font-size: 40px;  
+  text-align: left;
+  color: var(--subtitle-color);
+  text-transform: uppercase;
+  padding-bottom: 15px; 
+  font-family: "Poppins";
+}
+
+.cover-container-right .title-cover {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;  
+  text-align: left;
+  padding-bottom: 15px; 
+}
+
+.professions-cover{  
+  display: flex;
+  font-size: 40px;
+  color: var(--blueCyan-color);  
+  font-family: "Rubik Glitch";
+}
+
+.cover-container-right .cover-btn {
+  margin: 40px 0px;   
+  float: left;
+  font-family: "Poppins";
+}
+
+.cover-btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  background-color: var(--subtitle-color);
+  color: var(--bg-color);
+  border-color: var(--subtitle-color);
+  text-transform: uppercase; 
+}
+
+.cover-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--subtitle-color);
+  border: 1px solid var(--subtitle-color);
+}
+
+.profile-image {
+  max-width: 400px;
+  margin: auto auto auto 5%;
+  position: relative; 
+  float: left;
+  width: 50%;
+  padding-top: 230px;
+}
+
+.profile-image::before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 470px;
+  border: 900px solid var(--title-color);
+  border-radius: 15px;
+  top: 49.5%;
+  left: -5%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.profile-image img {
+  position: relative;
+  z-index: 5; 
+  min-width: 85%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 10px solid var(--subtitle-color);
+}
+
+.cover-social {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;    
+  z-index: 4;
+  width: 100%; 
+}
+
+.info-social-cover{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}  
+
+.cover-social-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cover-social .cover-social-icon {position: relative;}
+
+.cover-social .cover-social-icon::before {    
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--subtitle-color);
+  left: -82.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.github-cover, .linkedin-cover{
+  width: 45px;
+  height: 22px;
+  display: inline-block;
+}
+
+.cover-social .cover-social-icon ul {
+  max-width: 40%;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 80px;
+}
+
+.cover-social .cover-social-icon ul li {
+    display: inline-block;
+    margin-left: 13px; 
+}
+
+.cover-social .cover-social-icon ul li:first-child {margin-left: 0;}
+
+.cover-social .cover-social-icon ul li a {
+    color: var(--subtitle-color);
+    font-size: 31px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    border: 1px solid var(--subtitle-color);
+    text-align: center; 
+}
+
+.cover-social .cover-social-icon ul li a:hover {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+    border-color: var(--body-color);
+}
+
+.scroll-down {
+  height: 43px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  bottom: 100px;
+  left: 49%;
+  border-radius: 50%;    
+  background-color: var(--subtitle-color);
+}
+
+.scroll-down:hover { background-color: var(--subtitleInvert-color); }
+
+.arrow-down{
+  font-size: 43px;
+  color: var(--bg-color);  
+}
+
+.arrow-down:hover{ color: var(--body-color); }
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media screen and (max-width: 1300px) {   
+  .info-cover{ padding-left: 7%; }
+}
+
+@media screen and (max-width: 960px) { 
+  .info-cover{
+    width: 100%;
+    float: none;
+    padding-left: 0%;
+  }
+
+  .professions-cover{ display: block; }
+
+  .cover-container-right .sub-title-cover { text-align: center; }
+
+  .cover-container-right .title-cover { text-align: center; }
+  
+  .cover-container-right .cover-btn { float: none; }
+
+  .profile-image { display: none;}
+}
+
+@media screen and (max-width:767px) { 
+  .scroll-down { 
+    left: 47.5%;   
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 467px) { 
+  .info-cover{ padding-top: 300px; }
+
+  .cover-container-right .sub-title-cover { font-size: 30px; }
+
+  .cover-container-right .title-cover { font-size: 40px; }
+  
+  .professions-cover{ font-size: 30px; }  
+
+  .cover-container-right {
+    position: relative;     
+    padding-bottom: 150px;
+  }
+
+  .cover-content{
+    height: auto;
+    padding-bottom: 150px;
+  }
+  
+  .cover-social-container {
+    display: flex;
+    justify-content: left;
+  }
+
+  .cover-social {
+    position: relative;
+    top: 20px;
+  }
+
+  .cover-social .cover-social-icon::before {  left: -62.5%;  }
+  
+  .cover-social .cover-social-icon ul { max-width: 100%; }
+
+  .scroll-down { 
+    left: 44%; 
+    bottom: 50px;
+  }
+}

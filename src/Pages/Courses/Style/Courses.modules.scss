@@ -1,0 +1,99 @@
+@import url(../../../App.scss);
+
+.courses-zone{
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  padding-top: 160px;
+  width: 100%;
+  position: relative;    
+  z-index: 1;
+  overflow: hidden;
+  margin: auto;
+}
+
+.courses-zone img{object-fit: cover;}
+
+.courses-zone .container{
+  max-width: 1700px; 
+  display: block;
+  margin: auto;
+}
+
+.courses-zone h3{ 
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  position: absolute;
+  float: left;
+  padding: 0.8em 0;
+  opacity: .7;
+  left: 3%;
+  top: 2px;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--body-color);
+  padding-bottom: 10px; 
+}  
+
+.titleCourse{
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;;
+  margin: 0px auto !important;;
+  font-size: 35px !important;
+  color: var(--body-color) !important;;
+}
+
+.icon-course{
+  height: 100%;
+  width: 100%;
+}
+
+.info-course { padding-bottom: 20px; }
+
+.info-course p{ 
+  padding: 2px; 
+  font-size: 20px;
+}
+
+.logo-institute{
+  width: 100%;
+  max-width: 250px;
+  height: 230px;
+  border-radius: 20px;
+  margin: 0px auto 20px auto;
+}
+    
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {  
+  .courses-zone{
+    padding-top: 170px;
+    padding-bottom: 80px; 
+  }
+  
+  .logo-institute{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .info-course p { font-size: 15px !important;  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .courses-zone{
+    padding-top: 90px;
+    padding-bottom: 100px; 
+  } 
+}

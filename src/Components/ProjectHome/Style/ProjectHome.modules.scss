@@ -1,0 +1,216 @@
+@import url(../../../App.scss);
+
+.projects-home{
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  width: 100%;     
+  padding-top: 120px;
+  margin: auto;
+} 
+
+.projects-home img{object-fit: cover;}
+
+.projects-home .container{
+  max-width: 1300px;   
+  display: block;
+  margin: auto;
+}
+
+.projects-home .container p{ color: var(--body-color);}
+
+.section-title p{ 
+  width: 90%; 
+  margin: auto;
+}
+
+.projects-info{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  flex-direction: row;
+}
+
+.projects-info .project-container{
+  margin: 20px auto;
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.projects-info h2{
+  color: var(--subtitle-color);
+  margin: 10px auto;
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+.placeup-container {
+  width: 69%;
+  height: auto;
+  position: relative;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instagram-pokedex-container{  
+  position: relative;
+  width: 30%;
+}
+
+.instagram {
+  position: relative;
+  width: 100%;  
+  margin-top: 31px;
+}
+
+.pokedex{  width: 100%;  }
+
+.project {
+  width: 100%;
+  position: relative;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project .project-image img {
+    width: 100% !important;
+    height: 100%; 
+    border-radius: 10px;
+    border: 2px solid var(--subtitle-color);
+}
+
+.project .work-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;  
+    border-radius: 10px;
+    background-color: var(--subtitle-color);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; 
+}
+
+.project .work-overlay .work-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;  
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); 
+}
+
+.project .work-overlay .work-content .work-title{
+    font-size: 22px;
+    color: var(--bg-color);
+    font-weight: 600;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0; 
+}
+    
+.project:hover .work-overlay {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.project:hover .work-overlay .work-content .work-title {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; 
+}
+
+.projects-home .main-btn{ margin-top: 40px }
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+   
+@media only screen and (min-width: 768px) and (max-width: 991px) {   
+    .projects-home{
+        padding-top: 90px;
+        padding-bottom: 100px; 
+    } 
+}
+
+@media only screen and (max-width: 1060px) {
+    .projects-info h2 { font-size: 27px;} 
+
+    .project .project-image img { width: 100% !important; }
+
+    .placeup-container {    
+        flex: 0 0 33.5%;
+        display: flex;  
+    }
+
+    .instagram-pokedex-container{  
+        flex: 0 0 66.2%;
+        display: flex;  
+    }
+
+    .instagram {  margin-top: 0px;  }
+
+    .pokedex{ margin-left: 3px;  }  
+}
+
+@media (max-width: 767px) {
+    .projects-home{
+        padding-top: 150px;
+        padding-bottom: 80px; 
+    } 
+
+    .projects-info{ 
+      display: block;       
+      margin-bottom: 0px;
+    }    
+
+    .projects-info .project-container{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .projec
+
+    .title-project {font-size: 30px;} 
+
+    .placeup-container {    
+        flex: 0 0 90%;
+        width: 90%;
+        display: block;  
+        margin: auto;
+    }
+
+    .instagram-pokedex-container{  
+        flex: 0 0 90%;
+        width: 90%;
+        display: block;      
+        margin: auto;
+    }   
+
+    .pokedex{ margin-left: 0px; }
+}

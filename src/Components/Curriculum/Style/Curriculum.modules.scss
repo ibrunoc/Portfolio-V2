@@ -1,0 +1,36 @@
+@import url(../../../App.scss);
+
+.curriculum {
+  height: auto;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 1; 
+  background-image: url("../Images/programming.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.curriculum::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: -1; 
+}
+
+.curriculum-content .curriculum-title {
+  padding-top: 65px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #e9e9e9;
+  padding-bottom: 30px; 
+}
+
+.curriculum-content .main-btn{
+  color: var(--blueCyan-color);
+  border-color: var(--blueCyan-color);  
+  margin-bottom: 20px;
+}
